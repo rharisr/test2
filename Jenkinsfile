@@ -4,8 +4,8 @@ pipeline {
         stage("Build"){
             when {
                 //buildingTag()
-                tag "release-*"
-                
+                //tag "release-*"
+                changelog '.*rel_txt.*' 
             }
             steps{
                 echo "Hello world Build tag "
