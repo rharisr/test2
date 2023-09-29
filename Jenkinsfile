@@ -4,7 +4,7 @@ pipeline {
         stage("Build"){
             when {
                 //buildingTag()
-                tag "4.0"
+                tag "release-*"
                 
             }
             steps{
