@@ -4,7 +4,7 @@ pipeline {
         stage("Build"){
             when {
                 //buildingTag()
-                tag "3.0"
+                tag "4.0"
                 
             }
             steps{
