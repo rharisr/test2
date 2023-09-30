@@ -6,7 +6,9 @@ pipeline {
                 //buildingTag()
                 //tag "release-*"
                 //changelog '.*rel_txt.*' 
-                changeRequest()
+                changeRequest  title:"when-pr"
+
+                
             }
             steps{
                 echo "Hello world Build tag "
