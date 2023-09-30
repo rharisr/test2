@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage("Build"){
             when {
-                //buildingTag()
+                buildingTag()
                 //tag "release-*"
-                changelog '.*rel_txt.*' 
+                //changelog '.*rel_txt.*' 
                 //changeRequest  title:"when-pr"
                 //changeset glob: "*.js"
             }
