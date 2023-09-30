@@ -1,5 +1,9 @@
 pipeline {
     agent any 
+    options{
+        timestamps()
+        overrideIndexTrigger(true)
+    }
     stages {
         stage("Build parallel "){
             //failFirst true 
