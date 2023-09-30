@@ -8,7 +8,6 @@ pipeline {
                 //changelog '.*rel_txt.*' 
                 changeRequest  title:"when-pr"
 
-                
             }
             steps{
                 echo "Hello world Build tag "
