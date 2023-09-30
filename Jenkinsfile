@@ -2,7 +2,7 @@ pipeline {
     agent any 
     stages {
         stage("Build parallel "){
-            failFirst true 
+            //failFirst true 
             parallel{
                 stage('Step1') {
                     steps {
