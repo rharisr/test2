@@ -7,7 +7,7 @@ pipeline {
                 //tag "release-*"
                 //changelog '.*rel_txt.*' 
                 //changeRequest  title:"when-pr"
-                changeSet glob: "*.js"
+                changeset glob: "*.js"
             }
             steps{
                 echo "Hello world Build tag "
