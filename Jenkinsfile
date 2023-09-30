@@ -2,7 +2,7 @@ pipeline {
     agent any 
     options{
         timestamps()
-        overrideIndexTrigger(true)
+        overrideIndexTriggers(true)
     }
     stages {
         stage("Build parallel "){
