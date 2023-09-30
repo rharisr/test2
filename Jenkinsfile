@@ -8,7 +8,7 @@ pipeline {
                     steps {
                         
                     echo "Step 1"
-                    sleep 1
+                    sleep 10
 
                     }
                 }
