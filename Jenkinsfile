@@ -6,7 +6,8 @@ pipeline {
                 //buildingTag()
                 //tag "release-*"
                 //changelog '.*rel_txt.*' 
-                changeRequest  title:"when-pr"
+                //changeRequest  title:"when-pr"
+                changeset glob: "*.txt"
 
             }
             steps{
