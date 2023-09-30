@@ -7,7 +7,7 @@ pipeline {
                 //tag "release-*"
                 //changelog '.*rel_txt.*' 
                 //changeRequest  title:"when-pr"
-                changeset glob: "*.txt"
+                changeset GLOB: "*.txt"
 
             }
             steps{
