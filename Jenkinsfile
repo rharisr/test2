@@ -11,10 +11,10 @@ pipeline {
             parallel{
                 stage('Step1') {
                     steps {
-                    echo "hello world Step 1"
                     script{
                         currentBuild.result = 'UNSTABLE'
                     }
+                    echo "hello world Step 1"
                     sleep 10
                     }
 
