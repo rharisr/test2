@@ -3,7 +3,7 @@ pipeline {
     options{
         timestamps()
         overrideIndexTriggers(true)
-        //skipStagesAfterUnstable()
+        skipStagesAfterUnstable()
     }
     stages {
         stage("Build parallel "){
