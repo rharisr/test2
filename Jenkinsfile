@@ -18,6 +18,7 @@ pipeline {
                     }
                     scripts{
                         currentBuild.result = 'UNSTABLE'
+                    }
                 }
                 stage("Step2"){
                     steps {
