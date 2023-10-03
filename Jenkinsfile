@@ -12,10 +12,10 @@ pipeline {
                 stage('Step1') {
                     steps {
                     echo "hello world Step 1"
-                    sleep 10
                     scripts{
                         currentBuild.result = 'UNSTABLE'
                     }
+                    sleep 10
                     }
 
                 }
