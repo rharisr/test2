@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage("Build parallel "){
             //failFirst true 
-            //parallel{
+            parallel{
                 stage('Step1') {
                     steps {
                     script{
@@ -31,7 +31,7 @@ pipeline {
                         sleep 10
                     }
                 }
-           // }
+            }
         }
     }
 }
