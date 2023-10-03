@@ -3,6 +3,7 @@ pipeline {
     options{
         timestamps()
         overrideIndexTriggers(true)
+        //skipStagesAfterUnstable()
     }
     stages {
         stage("Build parallel "){
@@ -15,6 +16,8 @@ pipeline {
                     sleep 10
 
                     }
+                    scripts{
+                        currentBuild.result = 'UNSTABLE'
                 }
                 stage("Step2"){
                     steps {
